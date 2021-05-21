@@ -1,0 +1,17 @@
+{
+    "type":"postgres",
+    "host":"localhost",
+    "port":"5500",
+    "username":"postgres",
+    "password":"docker",
+    "database":"database0205",
+    "migrations":[
+        "./src/shared/database/migrations/*.ts"
+    ],
+    "cli":{
+        "migrationsDir":"./src/shared/database/migrations"
+    },
+    "entities": [
+        "./src/useCases/*/models/*.ts"
+    ]
+}
